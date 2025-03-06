@@ -1,85 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+.menu-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
-
-h1 {
-    margin: 90px 0;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.box {
-    width: 320px;
-    height: 120px;
-    padding: 15px;
-    border: 2px solid black;
-    background-color: #f1f1f1;
-    position: relative;
-    text-align: left;
-    display: flex;
-    align-items: center;
-}
-.box p{
-    padding-top: 30px;
-}
-
-.title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    width: 100px;
-}
-
-.chicken {
-    background-color: #e8a8a8;
-    text-align: center;
-}
-
-.beef {
-    background-color: #b34c4c;
-    color: white;
-    text-align: center;
-}
-
-.sushi {
-    background-color: #f4e19c;
-    text-align: center;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    .menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 100px;
-        padding: 30px;
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
     }
-
-    .box {
-        margin-top: -30px;
+    .navbar-nav {
+        text-align: center;
         width: 100%;
     }
-
-    .box:nth-child(3) { 
-        grid-column: span 2;
+    .navbar-nav .nav-item {
+        display: block;
     }
 }
-@media (max-width: 767px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        gap: 30px;
-    }
-
-    .box {
-        width: 90%;
+@media (min-width: 769px) {
+    .navbar-toggler {
+        display: none;
     }
 }
-
